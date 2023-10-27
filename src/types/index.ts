@@ -1,3 +1,21 @@
+interface Team {
+	name: string
+	members: User[]
+}
+
+interface User {
+	name: string
+	surname: string
+	email: string
+	team: Team
+	googleToken: string
+}
+
+interface UserToken {
+	user: User
+	token: string
+}
+
 interface Organization {
 	id: string
 	name: string
