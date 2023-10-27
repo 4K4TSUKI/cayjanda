@@ -3,7 +3,7 @@ import {Card, CardHeader, CardBody, CardFooter} from "@nextui-org/card";
 const Calendar = () => {
 	const days = ["Pts","Sal","Çar","Prş","Cum","Cts","Pzr"]
 	return <>
-		<Card className="max-w-[400px]">
+		<Card className=" bg-primary max-w-[400px]">
 			<CardHeader className="flex gap-3">
 				<span className="text-2xl">Calendar</span>
 			</CardHeader>
