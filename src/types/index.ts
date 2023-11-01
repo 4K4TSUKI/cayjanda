@@ -49,12 +49,13 @@ interface SelledProduct {
 	recieved: number
 }
 
-interface Meeting {
+interface Event {
 	id: string
-	client: Client
-	address: string
-	geoMap: {lat: number, lng: number}
+	client?: Client
+	address?: string
+	geoMap?: {lat: number, lng: number}
 	date: Date
+	description?: string
 }
 
 interface Notification {
@@ -64,4 +65,4 @@ interface Notification {
 	from: string
 }
 
-export type {Organization, Client, Product, SelledProduct, Meeting, Notification}
+export type {Organization, Client, Product, SelledProduct, Event, Notification}
